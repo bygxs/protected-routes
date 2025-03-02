@@ -5,8 +5,21 @@ const HomePage: React.FC = () => {
   return (
     <div className=" flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 p-4">
       <h1 className=" text-4xl font-bold text-gray-800 dark:text-white mb-4">
-        Welcome to Our App!
+      Protected Routes I: client-side 
       </h1>
+
+      <h2 className="  text-2xl font-semibold text-gray-800 dark:text-white mb-2">
+          This is client-side protection of Protected Routes?
+        </h2>
+        <p>
+          This technique uses client-side protection with React hooks (useAuth,
+          useEffect) to check authentication and redirect users, making it
+          simple and straightforward. Middleware, on the other hand, runs
+          server-side in Next.js, intercepting requests before pages load,
+          offering stricter, centralized control but requiring more setup.
+          Client-side is easier to implement; middleware is more secure and
+          scalable.
+        </p>
       <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
         Join us today and start your journey with us.
       </p>
@@ -27,15 +40,7 @@ const HomePage: React.FC = () => {
       </Link>
 
       <div className="ml-8 mr-8 text-center">
-        <p>
-          This technique uses client-side protection with React hooks (useAuth,
-          useEffect) to check authentication and redirect users, making it
-          simple and straightforward. Middleware, on the other hand, runs
-          server-side in Next.js, intercepting requests before pages load,
-          offering stricter, centralized control but requiring more setup.
-          Client-side is easier to implement; middleware is more secure and
-          scalable.
-        </p>
+      
         <h2 className="  text-2xl font-semibold text-gray-800 dark:text-white mb-2">
           What are Protected Routes?
         </h2>
